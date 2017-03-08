@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
+import SVProgressHUD
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +18,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        if let window = window {
+            window.backgroundColor = UIColor.white
+            window.rootViewController = UINavigationController(rootViewController: AlbumController())
+            window.makeKeyAndVisible()
+        }
+        
+        let keyboardManager = IQKeyboardManager.sharedManager()
+        keyboardManager.enable = true
+        keyboardManager.enableAutoToolbar = false
+        keyboardManager.shouldResignOnTouchOutside = true
+        
+        SVProgressHUD.setDefaultMaskType(.black)
+        
         return true
     }
 

@@ -7,21 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C36126891E6F176F006FBA7F /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36126881E6F176F006FBA7F /* Photo.swift */; };
+		C361268B1E6F1B76006FBA7F /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C361268A1E6F1B76006FBA7F /* ObjectMapper.framework */; };
+		C36126911E6F2033006FBA7F /* BaseTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36126901E6F2033006FBA7F /* BaseTableViewAdapter.swift */; };
+		C36A90191E6E6FE000FD05DD /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36A90181E6E6FE000FD05DD /* SVProgressHUD.framework */; };
+		C36A901B1E6E874400FD05DD /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36A901A1E6E874400FD05DD /* Moya.framework */; };
+		C36A901D1E6E87E500FD05DD /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36A901C1E6E87E500FD05DD /* API.swift */; };
+		C36A901F1E6E8A4500FD05DD /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36A901E1E6E8A4500FD05DD /* Alamofire.framework */; };
+		C36A90211E6E8A7000FD05DD /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36A90201E6E8A7000FD05DD /* Result.framework */; };
+		C3B8CE081E6FEF8200A2BB03 /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B8CE071E6FEF8200A2BB03 /* PINRemoteImage.framework */; };
+		C3B8CE0A1E6FEF8D00A2BB03 /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B8CE091E6FEF8D00A2BB03 /* PINCache.framework */; };
+		C3B8CE0D1E6FFA1300A2BB03 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B8CE0C1E6FFA1300A2BB03 /* PhotoCell.swift */; };
+		C3B8F4F31E70150E00A2BB03 /* PINOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B8F4F21E70150E00A2BB03 /* PINOperation.framework */; };
+		C3B8F4F51E701F4500A2BB03 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B8F4F41E701F4500A2BB03 /* AlbumCell.swift */; };
+		C3B8F4F71E701F8400A2BB03 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B8F4F61E701F8400A2BB03 /* Album.swift */; };
+		C3B8F4F91E70284000A2BB03 /* PhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B8F4F81E70284000A2BB03 /* PhotoController.swift */; };
 		C3F74DF91E67D021008178C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F74DF81E67D021008178C8 /* AppDelegate.swift */; };
-		C3F74DFB1E67D021008178C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F74DFA1E67D021008178C8 /* ViewController.swift */; };
-		C3F74DFE1E67D021008178C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3F74DFC1E67D021008178C8 /* Main.storyboard */; };
 		C3F74E001E67D021008178C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F74DFF1E67D021008178C8 /* Assets.xcassets */; };
 		C3F74E031E67D021008178C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3F74E011E67D021008178C8 /* LaunchScreen.storyboard */; };
+		C3F74E0B1E67D0B9008178C8 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = C3F74E0A1E67D0B9008178C8 /* Cartfile */; };
+		C3F74E111E67D146008178C8 /* AlbumController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F74E101E67D146008178C8 /* AlbumController.swift */; };
+		C3F74E141E67F23B008178C8 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F74E131E67F23B008178C8 /* IQKeyboardManagerSwift.framework */; };
+		C3F74E191E67F89A008178C8 /* HelloWorldLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F74E181E67F89A008178C8 /* HelloWorldLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C36126881E6F176F006FBA7F /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		C361268A1E6F1B76006FBA7F /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		C36126901E6F2033006FBA7F /* BaseTableViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewAdapter.swift; sourceTree = "<group>"; };
+		C36A90181E6E6FE000FD05DD /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
+		C36A901A1E6E874400FD05DD /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		C36A901C1E6E87E500FD05DD /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		C36A901E1E6E8A4500FD05DD /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		C36A90201E6E8A7000FD05DD /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		C3B8CE051E6FEF0D00A2BB03 /* AsyncDisplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AsyncDisplayKit.framework; path = Carthage/Build/iOS/AsyncDisplayKit.framework; sourceTree = "<group>"; };
+		C3B8CE071E6FEF8200A2BB03 /* PINRemoteImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINRemoteImage.framework; path = Carthage/Build/iOS/PINRemoteImage.framework; sourceTree = "<group>"; };
+		C3B8CE091E6FEF8D00A2BB03 /* PINCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINCache.framework; path = Carthage/Build/iOS/PINCache.framework; sourceTree = "<group>"; };
+		C3B8CE0C1E6FFA1300A2BB03 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		C3B8F4F21E70150E00A2BB03 /* PINOperation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINOperation.framework; path = Carthage/Build/iOS/PINOperation.framework; sourceTree = "<group>"; };
+		C3B8F4F41E701F4500A2BB03 /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		C3B8F4F61E701F8400A2BB03 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		C3B8F4F81E70284000A2BB03 /* PhotoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoController.swift; sourceTree = "<group>"; };
 		C3F74DF51E67D021008178C8 /* iOS Boilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Boilerplate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F74DF81E67D021008178C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C3F74DFA1E67D021008178C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C3F74DFD1E67D021008178C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3F74DFF1E67D021008178C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3F74E021E67D021008178C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3F74E041E67D021008178C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3F74E0A1E67D0B9008178C8 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		C3F74E101E67D146008178C8 /* AlbumController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumController.swift; sourceTree = "<group>"; };
+		C3F74E131E67F23B008178C8 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManagerSwift.framework; path = Carthage/Build/iOS/IQKeyboardManagerSwift.framework; sourceTree = "<group>"; };
+		C3F74E181E67F89A008178C8 /* HelloWorldLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloWorldLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +64,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3B8F4F31E70150E00A2BB03 /* PINOperation.framework in Frameworks */,
+				C36A90191E6E6FE000FD05DD /* SVProgressHUD.framework in Frameworks */,
+				C3B8CE0A1E6FEF8D00A2BB03 /* PINCache.framework in Frameworks */,
+				C3B8CE081E6FEF8200A2BB03 /* PINRemoteImage.framework in Frameworks */,
+				C361268B1E6F1B76006FBA7F /* ObjectMapper.framework in Frameworks */,
+				C36A90211E6E8A7000FD05DD /* Result.framework in Frameworks */,
+				C36A901F1E6E8A4500FD05DD /* Alamofire.framework in Frameworks */,
+				C36A901B1E6E874400FD05DD /* Moya.framework in Frameworks */,
+				C3F74E141E67F23B008178C8 /* IQKeyboardManagerSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C361268F1E6F1FEA006FBA7F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C36126901E6F2033006FBA7F /* BaseTableViewAdapter.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C3B8CE0B1E6FFA1300A2BB03 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C3B8CE0C1E6FFA1300A2BB03 /* PhotoCell.swift */,
+				C3B8F4F41E701F4500A2BB03 /* AlbumCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		C3F74DEC1E67D021008178C8 = {
 			isa = PBXGroup;
 			children = (
+				C3F74E0A1E67D0B9008178C8 /* Cartfile */,
 				C3F74DF71E67D021008178C8 /* iOS Boilerplate */,
 				C3F74DF61E67D021008178C8 /* Products */,
+				C3F74E121E67F23B008178C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +117,69 @@
 		C3F74DF71E67D021008178C8 /* iOS Boilerplate */ = {
 			isa = PBXGroup;
 			children = (
+				C3B8CE0B1E6FFA1300A2BB03 /* Cells */,
+				C361268F1E6F1FEA006FBA7F /* Base */,
+				C3F74E0C1E67D11C008178C8 /* Layouts */,
+				C3F74E0D1E67D11C008178C8 /* Utilities */,
+				C3F74E0E1E67D11C008178C8 /* Models */,
+				C3F74E0F1E67D11C008178C8 /* Controllers */,
 				C3F74DF81E67D021008178C8 /* AppDelegate.swift */,
-				C3F74DFA1E67D021008178C8 /* ViewController.swift */,
-				C3F74DFC1E67D021008178C8 /* Main.storyboard */,
 				C3F74DFF1E67D021008178C8 /* Assets.xcassets */,
 				C3F74E011E67D021008178C8 /* LaunchScreen.storyboard */,
 				C3F74E041E67D021008178C8 /* Info.plist */,
 			);
 			path = "iOS Boilerplate";
+			sourceTree = "<group>";
+		};
+		C3F74E0C1E67D11C008178C8 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				C3F74E181E67F89A008178C8 /* HelloWorldLayout.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		C3F74E0D1E67D11C008178C8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C36A901C1E6E87E500FD05DD /* API.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C3F74E0E1E67D11C008178C8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C36126881E6F176F006FBA7F /* Photo.swift */,
+				C3B8F4F61E701F8400A2BB03 /* Album.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C3F74E0F1E67D11C008178C8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3F74E101E67D146008178C8 /* AlbumController.swift */,
+				C3B8F4F81E70284000A2BB03 /* PhotoController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C3F74E121E67F23B008178C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3B8F4F21E70150E00A2BB03 /* PINOperation.framework */,
+				C3B8CE091E6FEF8D00A2BB03 /* PINCache.framework */,
+				C3B8CE071E6FEF8200A2BB03 /* PINRemoteImage.framework */,
+				C3B8CE051E6FEF0D00A2BB03 /* AsyncDisplayKit.framework */,
+				C361268A1E6F1B76006FBA7F /* ObjectMapper.framework */,
+				C36A90201E6E8A7000FD05DD /* Result.framework */,
+				C36A901E1E6E8A4500FD05DD /* Alamofire.framework */,
+				C36A901A1E6E874400FD05DD /* Moya.framework */,
+				C36A90181E6E6FE000FD05DD /* SVProgressHUD.framework */,
+				C3F74E131E67F23B008178C8 /* IQKeyboardManagerSwift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +192,7 @@
 				C3F74DF11E67D021008178C8 /* Sources */,
 				C3F74DF21E67D021008178C8 /* Frameworks */,
 				C3F74DF31E67D021008178C8 /* Resources */,
+				C3F74E151E67F242008178C8 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -95,6 +214,7 @@
 				TargetAttributes = {
 					C3F74DF41E67D021008178C8 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = U2976J2324;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -106,6 +226,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = C3F74DEC1E67D021008178C8;
 			productRefGroup = C3F74DF61E67D021008178C8 /* Products */;
@@ -124,33 +245,60 @@
 			files = (
 				C3F74E031E67D021008178C8 /* LaunchScreen.storyboard in Resources */,
 				C3F74E001E67D021008178C8 /* Assets.xcassets in Resources */,
-				C3F74DFE1E67D021008178C8 /* Main.storyboard in Resources */,
+				C3F74E0B1E67D0B9008178C8 /* Cartfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C3F74E151E67F242008178C8 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/IQKeyboardManagerSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AsyncDisplayKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PINRemoteImage.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PINCache.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PINOperation.framework",
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C3F74DF11E67D021008178C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3F74DFB1E67D021008178C8 /* ViewController.swift in Sources */,
+				C3B8F4F91E70284000A2BB03 /* PhotoController.swift in Sources */,
+				C3F74E111E67D146008178C8 /* AlbumController.swift in Sources */,
 				C3F74DF91E67D021008178C8 /* AppDelegate.swift in Sources */,
+				C36A901D1E6E87E500FD05DD /* API.swift in Sources */,
+				C3B8F4F51E701F4500A2BB03 /* AlbumCell.swift in Sources */,
+				C3B8CE0D1E6FFA1300A2BB03 /* PhotoCell.swift in Sources */,
+				C3B8F4F71E701F8400A2BB03 /* Album.swift in Sources */,
+				C3F74E191E67F89A008178C8 /* HelloWorldLayout.swift in Sources */,
+				C36126911E6F2033006FBA7F /* BaseTableViewAdapter.swift in Sources */,
+				C36126891E6F176F006FBA7F /* Photo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C3F74DFC1E67D021008178C8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C3F74DFD1E67D021008178C8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C3F74E011E67D021008178C8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -259,10 +407,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U2976J2324;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "iOS Boilerplate/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sample.iOS-Boilerplate";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -271,10 +427,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U2976J2324;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "iOS Boilerplate/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sample.iOS-Boilerplate";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -298,6 +462,7 @@
 				C3F74E091E67D021008178C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
