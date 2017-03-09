@@ -61,47 +61,53 @@ struct API {
     
     private static func request(_ target: Service, success: @escaping (Response) -> Void) {
         provider.request(target) { (result) in
-            switch result {
-            case let .success(response):
-                if response.statusCode >= 200 && response.statusCode < 400 {
-                    success(response)
-                } else {
-                    print("Bad Status Code")
+            DispatchQueue.global(qos: .background).async {
+                switch result {
+                case let .success(response):
+                    if response.statusCode >= 200 && response.statusCode < 400 {
+                        success(response)
+                    } else {
+                        print("Bad Status Code")
+                    }
+                case let .failure(error):
+                    print(error)
                 }
-            case let .failure(error):
-                print(error)
             }
         }
     }
     
     static func request<T: Mappable>(_ target: Service, success: @escaping (T) -> Void) {
         request(target) { (response) in
-            do {
-                let body = try response.mapString()
-                print(body)
-                if let object = Mapper<T>().map(JSONString: body) {
-                    success(object)
-                } else {
-                    print("Bad format")
+            DispatchQueue.global(qos: .background).async {
+                do {
+                    let body = try response.mapJSON()
+                    print(body)
+                    if let object = Mapper<T>().map(JSONObject: body) {
+                        success(object)
+                    } else {
+                        print("Bad format")
+                    }
+                } catch let error {
+                    print(error)
                 }
-            } catch let error {
-                print(error)
             }
         }
     }
     
     static func request<T: Mappable>(_ target: Service, success: @escaping ([T]) -> Void) {
         request(target) { (response) in
-            do {
-                let body = try response.mapString()
-                print(body)
-                if let object = Mapper<T>().mapArray(JSONString: body) {
-                    success(object)
-                } else {
-                    print("Bad format")
+            DispatchQueue.global(qos: .background).async {
+                do {
+                    let body = try response.mapJSON()
+                    print(body)
+                    if let object = Mapper<T>().mapArray(JSONObject: body) {
+                        success(object)
+                    } else {
+                        print("Bad format")
+                    }
+                } catch let error {
+                    print(error)
                 }
-            } catch let error {
-                print(error)
             }
         }
     }

@@ -9,6 +9,7 @@
 import UIKit
 import IQKeyboardManagerSwift
 import SVProgressHUD
+import GDPerformanceView
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         if let window = window {
             window.backgroundColor = UIColor.white
-            window.rootViewController = UINavigationController(rootViewController: AlbumController())
+            window.rootViewController = UINavigationController(rootViewController: MainController())
             window.makeKeyAndVisible()
         }
         
@@ -31,6 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         keyboardManager.shouldResignOnTouchOutside = true
         
         SVProgressHUD.setDefaultMaskType(.black)
+        
+        GDPerformanceMonitor.sharedInstance.startMonitoring()
         
         return true
     }

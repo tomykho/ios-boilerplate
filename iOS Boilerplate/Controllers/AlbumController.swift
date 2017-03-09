@@ -6,51 +6,24 @@
 //
 //
 
-import UIKit
 import AsyncDisplayKit
 
-class AlbumController: ASViewController<ASTableNode> {
-    let tableNode = ASTableNode()
-    var albums = [Album]()
+class AlbumController: BaseController<ASTableNode> {
     
-    init() {
-        super.init(node: tableNode)
-        self.title = "Albums"
-        tableNode.delegate = self
-        tableNode.dataSource = self
-    }
+    var adapter: AlbumAdapter!
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        API.request(.albums) { (albums: [Album]) in
-            self.albums = albums
-            self.tableNode.reloadData()
+        self.title = "Albums"
+        adapter = AlbumAdapter(tableNode: self.layout)
+        API.request(.albums) { (items: [Album]) in
+            self.adapter.items = items
+        }
+        self.adapter.didSelectItem = { index, album in
+            let controller = PhotoController()
+            controller.album = album
+            self.navigationController?.pushViewController(controller, animated: true)
         }
     }
     
 }
-
-extension AlbumController: ASTableDataSource {
-    func tableNode(_ tableNode: ASTableNode, numberOfRowsInSection section: Int) -> Int {
-        return self.albums.count
-    }
-    
-    func tableNode(_ tableNode: ASTableNode, nodeForRowAt indexPath: IndexPath) -> ASCellNode {
-        return AlbumCell(album: self.albums[indexPath.row])
-    }
-}
-
-extension AlbumController: ASTableDelegate {
-    func tableNode(_ tableNode: ASTableNode, didSelectRowAt indexPath: IndexPath) {
-        tableNode.deselectRow(at: indexPath, animated: true)
-        
-        let photoController = PhotoController()
-        photoController.album = self.albums[indexPath.row]
-        self.navigationController?.pushViewController(photoController, animated: true)
-    }
-}
-
