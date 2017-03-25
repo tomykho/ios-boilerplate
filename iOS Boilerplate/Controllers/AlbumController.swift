@@ -7,23 +7,31 @@
 //
 
 import AsyncDisplayKit
+import RxSwift
 
-class AlbumController: BaseController<ASTableNode> {
+class AlbumController: StateListController<ASTableNode, Album> {
     
+    override var request: Observable<[Album]>? {
+        get {
+            return API.request(.albums)
+        }
+    }
     var adapter: AlbumAdapter!
+    
+    override func loadAdapter() -> BaseAdapter<Album> {
+        adapter = AlbumAdapter(tableNode: self.layoutNode)
+        return adapter
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Albums"
-        adapter = AlbumAdapter(tableNode: self.layout)
-        API.request(.albums) { (items: [Album]) in
-            self.adapter.items = items
-        }
-        self.adapter.didSelectItem = { index, album in
-            let controller = PhotoController()
-            controller.album = album
-            self.navigationController?.pushViewController(controller, animated: true)
-        }
+    }
+    
+    override func didSelectItemAt(_ index: Int, item: Album) {
+        let controller = PhotoController()
+        controller.album = item
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
 }

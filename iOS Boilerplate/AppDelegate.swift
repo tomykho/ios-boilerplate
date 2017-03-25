@@ -9,13 +9,12 @@
 import UIKit
 import IQKeyboardManagerSwift
 import SVProgressHUD
-import GDPerformanceView
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let watchdog = Watchdog(threshold: 0.4, strictMode: true)
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -32,8 +31,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         keyboardManager.shouldResignOnTouchOutside = true
         
         SVProgressHUD.setDefaultMaskType(.black)
-        
-        GDPerformanceMonitor.sharedInstance.startMonitoring()
         
         return true
     }

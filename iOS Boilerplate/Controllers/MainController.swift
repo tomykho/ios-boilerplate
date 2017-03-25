@@ -14,8 +14,8 @@ class MainController: BaseController<MainLayout> {
         super.viewDidLoad()
         self.title = "Main"
         
-        layout.addPostButton.addTarget(self, action: #selector(addPost), forControlEvents: .touchUpInside)
-        layout.albumsButton.addTarget(self, action: #selector(showAlbums), forControlEvents: .touchUpInside)
+        layoutNode.addPostButton.addTarget(self, action: #selector(addPost), forControlEvents: .touchUpInside)
+        layoutNode.albumsButton.addTarget(self, action: #selector(showAlbums), forControlEvents: .touchUpInside)
     }
     
     func addPost() {

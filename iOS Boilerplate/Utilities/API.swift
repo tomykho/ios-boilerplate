@@ -6,110 +6,65 @@
 //
 //
 
-import Foundation
+import UIKit
 import Moya
+import RxSwift
+import RxMoya
 import ObjectMapper
 import Result
-
-public enum Service {
-    case albums
-    case photos(Int)
-}
-
-extension Service: TargetType {
-    public var baseURL: URL { return URL(string: "https://jsonplaceholder.typicode.com")! }
-    public var path: String {
-        switch self {
-        case .albums:
-            return "/albums"
-        case let .photos(albumId):
-            return "/albums/\(albumId)/photos"
-        }
-    }
-    public var method: Moya.Method {
-        return .get
-    }
-    public var parameters: [String: Any]? {
-        switch self {
-        default:
-            return nil
-        }
-    }
-    public var parameterEncoding: ParameterEncoding {
-        return JSONEncoding.default
-    }
-    public var task: Task {
-        return .request
-    }
-    public var sampleData: Data {
-        return Data()
-    }
-}
-
+import SwiftyUserDefaults
 
 struct API {
     
-    private static var provider: MoyaProvider<Service> = {
+    private static var provider: RxMoyaProvider<Service> = {
         let endpointClosure = { (target: Service) -> Endpoint<Service> in
             let defaultEndpoint = MoyaProvider.defaultEndpointMapping(for: target)
-            return defaultEndpoint
+            if Defaults[.language] == "" {
+                Defaults[.language] = Locale.current.identifier
+            }
+            return defaultEndpoint.adding(
+                newHTTPHeaderFields: [
+                    "Accept-Language": Defaults[.language]
+                ]
+            )
         }
-        return MoyaProvider<Service>(
-            endpointClosure: endpointClosure
+        return RxMoyaProvider<Service>(
+            endpointClosure: endpointClosure,
+            plugins: [
+                NetworkActivityPlugin { (change) -> () in
+                    UIApplication.shared.isNetworkActivityIndicatorVisible = change == .began
+                }
+            ]
         )
     }()
     
-    private static func request(_ target: Service, success: @escaping (Response) -> Void) {
-        provider.request(target) { (result) in
-            DispatchQueue.global(qos: .background).async {
-                switch result {
-                case let .success(response):
-                    if response.statusCode >= 200 && response.statusCode < 400 {
-                        success(response)
-                    } else {
-                        print("Bad Status Code")
-                    }
-                case let .failure(error):
-                    print(error)
-                }
-            }
-        }
+    private static func request(_ target: Service) -> Observable<Any> {
+        return provider.request(target)
+            .observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
+            .filterSuccessfulStatusCodes()
+            .mapJSON()
     }
     
-    static func request<T: Mappable>(_ target: Service, success: @escaping (T) -> Void) {
-        request(target) { (response) in
-            DispatchQueue.global(qos: .background).async {
-                do {
-                    let body = try response.mapJSON()
-                    print(body)
-                    if let object = Mapper<T>().map(JSONObject: body) {
-                        success(object)
-                    } else {
-                        print("Bad format")
-                    }
-                } catch let error {
-                    print(error)
+    static func request<T: Mappable>(_ target: Service) -> Observable<T> {
+        return request(target)
+            .flatMap({ (body) -> Observable<T> in
+                sleep(2)
+                if let object = Mapper<T>().map(JSONObject: body) {
+                    return Observable.just(object)
                 }
-            }
-        }
+                return Observable.error(NSError(domain: target.baseURL.absoluteString, code: 400))
+            })
     }
     
-    static func request<T: Mappable>(_ target: Service, success: @escaping ([T]) -> Void) {
-        request(target) { (response) in
-            DispatchQueue.global(qos: .background).async {
-                do {
-                    let body = try response.mapJSON()
-                    print(body)
-                    if let object = Mapper<T>().mapArray(JSONObject: body) {
-                        success(object)
-                    } else {
-                        print("Bad format")
-                    }
-                } catch let error {
-                    print(error)
+    static func request<T: Mappable>(_ target: Service) -> Observable<[T]>  {
+        return request(target)
+            .flatMap({ (body) -> Observable<[T]> in
+                sleep(2)
+                if let object = Mapper<T>().mapArray(JSONObject: body) {
+                    return Observable.just(object)
                 }
-            }
-        }
+                return Observable.error(NSError(domain: target.baseURL.absoluteString, code: 400))
+            })
     }
     
 }

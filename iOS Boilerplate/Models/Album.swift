@@ -6,20 +6,19 @@
 //
 //
 
-import Foundation
 import ObjectMapper
 
-struct Photo: Mappable {
+struct Album: Mappable {
     
     var id: Int!
-    var url: String!
+    var title: String!
     
-    // MARK: JSON
-    init?(map: Map) { }
+    init?(map: Map) {
+    }
     
     mutating func mapping(map: Map) {
         id <- map["id"]
-        url <- map["url"]
+        title <- map["title"]
     }
     
 }

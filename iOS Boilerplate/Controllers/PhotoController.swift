@@ -7,22 +7,26 @@
 //
 
 import AsyncDisplayKit
+import RxSwift
 
-class PhotoController: BaseCollectionController {
+class PhotoController: StateListController<CollectionNode, Photo> {
     
+    override var request: Observable<[Photo]>? {
+        get {
+            return API.request(.photos(album.id))
+        }
+    }
     var adapter: PhotoAdapter!
     var album: Album!
+    
+    override func loadAdapter() -> BaseAdapter<Photo> {
+        adapter = PhotoAdapter(collectionNode: self.layoutNode)
+        return adapter
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Photos"
-        adapter = PhotoAdapter(collectionNode: self.layout)
-        API.request(.photos(album.id)) { (items: [Photo]) in
-            self.adapter.items = items
-        }
-        self.adapter.didSelectItem = { index, photo in
-            print(photo.id)
-        }
     }
     
 }
