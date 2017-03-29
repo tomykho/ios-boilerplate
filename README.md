@@ -15,4 +15,8 @@ $ brew update
 $ brew install carthage
 ```
 
-Run `carthage bootstrap --platform iOS --no-use-binaries` to build the framework
+To install dependencies:
+
+```bash
+$ carthage bootstrap --platform iOS --no-use-binaries
+```
