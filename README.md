@@ -2,7 +2,12 @@
 
 A boilerplate for Swift iOS applications
 
-# Getting Started
+## Getting Started
+
+```bash
+$ git clone https://github.com/tomykho/ios-boilerplate.git <your-project-name>
+$ cd <your-project-name>
+```
 
 ### Carthage
 
