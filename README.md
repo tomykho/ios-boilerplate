@@ -7,6 +7,10 @@ A boilerplate for Swift iOS applications
 ```bash
 $ git clone https://github.com/tomykho/ios-boilerplate.git <your-project-name>
 $ cd <your-project-name>
+$ git remote rename origin github
+$ git remote set-url --push github disabled
+$ git remote add origin <your-repository-url>
+
 ```
 
 ### Carthage
