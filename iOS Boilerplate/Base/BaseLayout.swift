@@ -13,7 +13,6 @@ class BaseLayout: ASDisplayNode {
     override init() {
         super.init()
         self.automaticallyManagesSubnodes = true
-        self.backgroundColor = .white
     }
     
 }

@@ -14,7 +14,7 @@ import SVProgressHUD
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let watchdog = Watchdog(threshold: 0.4, strictMode: true)
+    var watchdog: Watchdog?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -32,6 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         SVProgressHUD.setDefaultMaskType(.black)
         
+        // Always put Watchdog at last
+        watchdog = Watchdog(threshold: 0.4, strictMode: true)
         return true
     }
 
