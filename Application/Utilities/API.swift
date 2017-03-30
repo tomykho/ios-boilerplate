@@ -59,7 +59,7 @@ struct API {
     static func request<T: Mappable>(_ target: Service) -> Observable<[T]>  {
         return request(target)
             .flatMap({ (body) -> Observable<[T]> in
-                sleep(2)
+                sleep(1)
                 if let object = Mapper<T>().mapArray(JSONObject: body) {
                     return Observable.just(object)
                 }
