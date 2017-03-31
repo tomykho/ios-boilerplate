@@ -6,19 +6,15 @@
 //
 //
 
-import ObjectMapper
+import TRON
+import SwiftyJSON
 
-struct Album: Mappable {
+class Album: JSONDecodable {
+    let id: Int
+    let title : String
     
-    var id: Int!
-    var title: String!
-    
-    init?(map: Map) {
+    required init(json: JSON) {
+        id = json["id"].intValue
+        title = json["title"].stringValue
     }
-    
-    mutating func mapping(map: Map) {
-        id <- map["id"]
-        title <- map["title"]
-    }
-    
 }

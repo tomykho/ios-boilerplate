@@ -6,65 +6,99 @@
 //
 //
 
+import Foundation
 import UIKit
-import Moya
+import Alamofire
+import TRON
+import SwiftyJSON
 import RxSwift
-import RxMoya
-import ObjectMapper
-import Result
 import SwiftyUserDefaults
 
 struct API {
     
-    private static var provider: RxMoyaProvider<Service> = {
-        let endpointClosure = { (target: Service) -> Endpoint<Service> in
-            let defaultEndpoint = MoyaProvider.defaultEndpointMapping(for: target)
-            if Defaults[.language] == "" {
-                Defaults[.language] = Locale.current.identifier
-            }
-            return defaultEndpoint.adding(
-                newHTTPHeaderFields: [
-                    "Accept-Language": Defaults[.language]
-                ]
-            )
-        }
-        return RxMoyaProvider<Service>(
-            endpointClosure: endpointClosure,
+    private static var tron: TRON = {
+        let tron = TRON(
+            baseURL: "https://jsonplaceholder.typicode.com",
             plugins: [
-                NetworkActivityPlugin { (change) -> () in
-                    UIApplication.shared.isNetworkActivityIndicatorVisible = change == .began
-                }
+                NetworkLoggerPlugin(),
+                NetworkActivityPlugin(application: UIApplication.shared),
+                RequestPlugin()
             ]
         )
+        return tron
     }()
     
-    private static func request(_ target: Service) -> Observable<Any> {
-        return provider.request(target)
-            .observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
-            .filterSuccessfulStatusCodes()
-            .mapJSON()
-    }
-    
-    static func request<T: Mappable>(_ target: Service) -> Observable<T> {
-        return request(target)
-            .flatMap({ (body) -> Observable<T> in
-                sleep(2)
-                if let object = Mapper<T>().map(JSONObject: body) {
-                    return Observable.just(object)
+    class RequestPlugin: Plugin {
+        
+        func willSendRequest<Model, ErrorModel>(_ request: BaseRequest<Model, ErrorModel>) {
+            request.headers = [
+                "Accept": "application/json",
+                "Accept-Language": Defaults[.language]
+            ]
+            #if DEBUG
+                print("Request URL: \(request.urlBuilder.url(forPath: request.path))")
+                print("Request Headers: \(request.headers)")
+                print("Request Parameters: \(request.parameters)")
+            #endif
+        }
+        
+        func didReceiveDataResponse<Model,ErrorModel>(_ response: DataResponse<Model>, forRequest request: Alamofire.Request, formedFrom tronRequest: BaseRequest<Model,ErrorModel>) {
+            #if DEBUG
+                if let data = response.data {
+                    let json = JSON(data: data)
+                    print("Response Body: \(json)")
                 }
-                return Observable.error(NSError(domain: target.baseURL.absoluteString, code: 400))
-            })
+            #endif
+        }
+        
     }
     
-    static func request<T: Mappable>(_ target: Service) -> Observable<[T]>  {
-        return request(target)
-            .flatMap({ (body) -> Observable<[T]> in
-                sleep(1)
-                if let object = Mapper<T>().mapArray(JSONObject: body) {
-                    return Observable.just(object)
+    class Error : JSONDecodable {
+        
+        required init(json: JSON) {
+        }
+        
+    }
+    
+    struct Albums {
+        static let path = "albums"
+        
+        static func find() -> Observable<[Album]> {
+            let request: APIRequest<[Album], API.Error> = tron.request(path)
+            return request.rxResult()
+        }
+        
+        static func photos(_ albumId: Int) -> Observable<[Photo]> {
+            let request: APIRequest<[Photo], API.Error> = tron.request("\(path)/\(albumId)/\(Photos.path)")
+            return request.rxResult()
+        }
+        
+    }
+    
+    struct Photos {
+        static let path = "photos"
+        
+        static func find() -> Observable<[Photo]> {
+            let request: APIRequest<[Photo], API.Error> = tron.request(path)
+            return request.rxResult()
+        }
+    }
+    
+}
+
+extension Array : JSONDecodable {
+    public init(json: JSON) {
+        self.init(json.arrayValue.flatMap {
+            if let type = Element.self as? JSONDecodable.Type {
+                let element : Element?
+                do {
+                    element = try type.init(json: $0) as? Element
+                } catch {
+                    return nil
                 }
-                return Observable.error(NSError(domain: target.baseURL.absoluteString, code: 400))
-            })
+                return element
+            }
+            return nil
+        })
     }
-    
 }

@@ -8,7 +8,7 @@
 
 import AsyncDisplayKit
 import RxSwift
-import ObjectMapper
+import TRON
 
 enum State {
     case loading
@@ -51,7 +51,7 @@ class StateController<L: ASDisplayNode>: BaseController<L> {
 
 }
 
-class StateListController<L: ASDisplayNode, T: Mappable>: StateController<L> {
+class StateListController<L: ASDisplayNode, T: JSONDecodable>: StateController<L> {
     
     var subscription: Disposable?
     var request: Observable<[T]>? {

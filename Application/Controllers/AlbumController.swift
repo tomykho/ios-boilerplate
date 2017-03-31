@@ -13,7 +13,7 @@ class AlbumController: StateListController<ASTableNode, Album> {
     
     override var request: Observable<[Album]>? {
         get {
-            return API.request(.albums)
+            return API.Albums.find()
         }
     }
     var adapter: AlbumAdapter!

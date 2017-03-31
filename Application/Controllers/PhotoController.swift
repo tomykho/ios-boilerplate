@@ -13,7 +13,7 @@ class PhotoController: StateListController<CollectionNode, Photo> {
     
     override var request: Observable<[Photo]>? {
         get {
-            return API.request(.photos(album.id))
+            return API.Albums.photos(album.id)
         }
     }
     var adapter: PhotoAdapter!

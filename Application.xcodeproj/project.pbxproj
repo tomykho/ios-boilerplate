@@ -25,7 +25,6 @@
 		C32874981E8CF25100B03BF4 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C328747F1E8CF25100B03BF4 /* Photo.swift */; };
 		C32874991E8CF25100B03BF4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32874811E8CF25100B03BF4 /* API.swift */; };
 		C328749A1E8CF25100B03BF4 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32874821E8CF25100B03BF4 /* Defaults.swift */; };
-		C328749B1E8CF25100B03BF4 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32874831E8CF25100B03BF4 /* Service.swift */; };
 		C328749C1E8CF25100B03BF4 /* Watchdog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32874841E8CF25100B03BF4 /* Watchdog.swift */; };
 		C328749D1E8CF25100B03BF4 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32874861E8CF25100B03BF4 /* Button.swift */; };
 		C32874AE1E8CF9C200B03BF4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C328749F1E8CF9C200B03BF4 /* Alamofire.framework */; };
@@ -33,16 +32,14 @@
 		C32874B01E8CF9C200B03BF4 /* DynamicColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874A11E8CF9C200B03BF4 /* DynamicColor.framework */; };
 		C32874B11E8CF9C200B03BF4 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874A21E8CF9C200B03BF4 /* IQKeyboardManagerSwift.framework */; };
 		C32874B21E8CF9C200B03BF4 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874A31E8CF9C200B03BF4 /* KeychainAccess.framework */; };
-		C32874B31E8CF9C200B03BF4 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874A41E8CF9C200B03BF4 /* Moya.framework */; };
-		C32874B41E8CF9C200B03BF4 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874A51E8CF9C200B03BF4 /* ObjectMapper.framework */; };
 		C32874B51E8CF9C200B03BF4 /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874A61E8CF9C200B03BF4 /* PINCache.framework */; };
 		C32874B61E8CF9C200B03BF4 /* PINOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874A71E8CF9C200B03BF4 /* PINOperation.framework */; };
 		C32874B71E8CF9C200B03BF4 /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874A81E8CF9C200B03BF4 /* PINRemoteImage.framework */; };
-		C32874B81E8CF9C200B03BF4 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874A91E8CF9C200B03BF4 /* Result.framework */; };
-		C32874B91E8CF9C200B03BF4 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874AA1E8CF9C200B03BF4 /* RxMoya.framework */; };
 		C32874BA1E8CF9C200B03BF4 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874AB1E8CF9C200B03BF4 /* RxSwift.framework */; };
 		C32874BB1E8CF9C200B03BF4 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874AC1E8CF9C200B03BF4 /* SVProgressHUD.framework */; };
 		C32874BC1E8CF9C200B03BF4 /* SwiftyUserDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874AD1E8CF9C200B03BF4 /* SwiftyUserDefaults.framework */; };
+		C32874C11E8D104700B03BF4 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = C32874C01E8D104700B03BF4 /* Cartfile */; };
+		C32874C31E8D20CA00B03BF4 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874C21E8D20CA00B03BF4 /* SwiftyJSON.framework */; };
 		C3C4F2CE1E8CF0D400C755DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C4F2CD1E8CF0D400C755DA /* AppDelegate.swift */; };
 		C3C4F2D51E8CF0D400C755DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3C4F2D41E8CF0D400C755DA /* Assets.xcassets */; };
 		C3C4F2D81E8CF0D400C755DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3C4F2D61E8CF0D400C755DA /* LaunchScreen.storyboard */; };
@@ -67,7 +64,6 @@
 		C328747F1E8CF25100B03BF4 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		C32874811E8CF25100B03BF4 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		C32874821E8CF25100B03BF4 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
-		C32874831E8CF25100B03BF4 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		C32874841E8CF25100B03BF4 /* Watchdog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Watchdog.swift; sourceTree = "<group>"; };
 		C32874861E8CF25100B03BF4 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		C328749F1E8CF9C200B03BF4 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
@@ -75,16 +71,14 @@
 		C32874A11E8CF9C200B03BF4 /* DynamicColor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DynamicColor.framework; path = Carthage/Build/iOS/DynamicColor.framework; sourceTree = "<group>"; };
 		C32874A21E8CF9C200B03BF4 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManagerSwift.framework; path = Carthage/Build/iOS/IQKeyboardManagerSwift.framework; sourceTree = "<group>"; };
 		C32874A31E8CF9C200B03BF4 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
-		C32874A41E8CF9C200B03BF4 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
-		C32874A51E8CF9C200B03BF4 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		C32874A61E8CF9C200B03BF4 /* PINCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINCache.framework; path = Carthage/Build/iOS/PINCache.framework; sourceTree = "<group>"; };
 		C32874A71E8CF9C200B03BF4 /* PINOperation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINOperation.framework; path = Carthage/Build/iOS/PINOperation.framework; sourceTree = "<group>"; };
 		C32874A81E8CF9C200B03BF4 /* PINRemoteImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINRemoteImage.framework; path = Carthage/Build/iOS/PINRemoteImage.framework; sourceTree = "<group>"; };
-		C32874A91E8CF9C200B03BF4 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
-		C32874AA1E8CF9C200B03BF4 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
 		C32874AB1E8CF9C200B03BF4 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		C32874AC1E8CF9C200B03BF4 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 		C32874AD1E8CF9C200B03BF4 /* SwiftyUserDefaults.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyUserDefaults.framework; path = Carthage/Build/iOS/SwiftyUserDefaults.framework; sourceTree = "<group>"; };
+		C32874C01E8D104700B03BF4 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		C32874C21E8D20CA00B03BF4 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		C3C4F2CA1E8CF0D400C755DA /* Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3C4F2CD1E8CF0D400C755DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3C4F2D41E8CF0D400C755DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,18 +91,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C32874C31E8D20CA00B03BF4 /* SwiftyJSON.framework in Frameworks */,
 				C32874AE1E8CF9C200B03BF4 /* Alamofire.framework in Frameworks */,
 				C32874AF1E8CF9C200B03BF4 /* AsyncDisplayKit.framework in Frameworks */,
 				C32874B01E8CF9C200B03BF4 /* DynamicColor.framework in Frameworks */,
 				C32874B11E8CF9C200B03BF4 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				C32874B21E8CF9C200B03BF4 /* KeychainAccess.framework in Frameworks */,
-				C32874B31E8CF9C200B03BF4 /* Moya.framework in Frameworks */,
-				C32874B41E8CF9C200B03BF4 /* ObjectMapper.framework in Frameworks */,
 				C32874B51E8CF9C200B03BF4 /* PINCache.framework in Frameworks */,
 				C32874B61E8CF9C200B03BF4 /* PINOperation.framework in Frameworks */,
 				C32874B71E8CF9C200B03BF4 /* PINRemoteImage.framework in Frameworks */,
-				C32874B81E8CF9C200B03BF4 /* Result.framework in Frameworks */,
-				C32874B91E8CF9C200B03BF4 /* RxMoya.framework in Frameworks */,
 				C32874BA1E8CF9C200B03BF4 /* RxSwift.framework in Frameworks */,
 				C32874BB1E8CF9C200B03BF4 /* SVProgressHUD.framework in Frameworks */,
 				C32874BC1E8CF9C200B03BF4 /* SwiftyUserDefaults.framework in Frameworks */,
@@ -174,7 +165,6 @@
 			children = (
 				C32874811E8CF25100B03BF4 /* API.swift */,
 				C32874821E8CF25100B03BF4 /* Defaults.swift */,
-				C32874831E8CF25100B03BF4 /* Service.swift */,
 				C32874841E8CF25100B03BF4 /* Watchdog.swift */,
 			);
 			path = Utilities;
@@ -191,18 +181,15 @@
 		C328749E1E8CF9C200B03BF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C32874C21E8D20CA00B03BF4 /* SwiftyJSON.framework */,
 				C328749F1E8CF9C200B03BF4 /* Alamofire.framework */,
 				C32874A01E8CF9C200B03BF4 /* AsyncDisplayKit.framework */,
 				C32874A11E8CF9C200B03BF4 /* DynamicColor.framework */,
 				C32874A21E8CF9C200B03BF4 /* IQKeyboardManagerSwift.framework */,
 				C32874A31E8CF9C200B03BF4 /* KeychainAccess.framework */,
-				C32874A41E8CF9C200B03BF4 /* Moya.framework */,
-				C32874A51E8CF9C200B03BF4 /* ObjectMapper.framework */,
 				C32874A61E8CF9C200B03BF4 /* PINCache.framework */,
 				C32874A71E8CF9C200B03BF4 /* PINOperation.framework */,
 				C32874A81E8CF9C200B03BF4 /* PINRemoteImage.framework */,
-				C32874A91E8CF9C200B03BF4 /* Result.framework */,
-				C32874AA1E8CF9C200B03BF4 /* RxMoya.framework */,
 				C32874AB1E8CF9C200B03BF4 /* RxSwift.framework */,
 				C32874AC1E8CF9C200B03BF4 /* SVProgressHUD.framework */,
 				C32874AD1E8CF9C200B03BF4 /* SwiftyUserDefaults.framework */,
@@ -213,6 +200,7 @@
 		C3C4F2C11E8CF0D400C755DA = {
 			isa = PBXGroup;
 			children = (
+				C32874C01E8D104700B03BF4 /* Cartfile */,
 				C3C4F2CC1E8CF0D400C755DA /* Application */,
 				C3C4F2CB1E8CF0D400C755DA /* Products */,
 				C328749E1E8CF9C200B03BF4 /* Frameworks */,
@@ -304,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C32874C11E8D104700B03BF4 /* Cartfile in Resources */,
 				C3C4F2D81E8CF0D400C755DA /* LaunchScreen.storyboard in Resources */,
 				C3C4F2D51E8CF0D400C755DA /* Assets.xcassets in Resources */,
 			);
@@ -320,10 +309,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/IQKeyboardManagerSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/AsyncDisplayKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/PINRemoteImage.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/PINCache.framework",
@@ -331,8 +317,9 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyUserDefaults.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/DynamicColor.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/TRON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxMoya.framework",
 			);
 			outputPaths = (
 			);
@@ -355,7 +342,6 @@
 				C32874971E8CF25100B03BF4 /* Album.swift in Sources */,
 				C328748C1E8CF25100B03BF4 /* BaseController.swift in Sources */,
 				C328748D1E8CF25100B03BF4 /* BaseLayout.swift in Sources */,
-				C328749B1E8CF25100B03BF4 /* Service.swift in Sources */,
 				C3C4F2CE1E8CF0D400C755DA /* AppDelegate.swift in Sources */,
 				C32874951E8CF25100B03BF4 /* AddPostLayout.swift in Sources */,
 				C328748B1E8CF25100B03BF4 /* BaseCell.swift in Sources */,
