@@ -29,3 +29,9 @@ To install dependencies:
 ```bash
 $ carthage bootstrap --platform iOS --no-use-binaries
 ```
+
+### Rename the project
+
+1. Click on the project you want to rename in the "Project navigator" on the left of the Xcode view.
+2. On the right select the "File inspector" and the name of your project should be in there under "Identity and Type", change it to the new name.
+3. Click "Rename" in a dropdown menu
