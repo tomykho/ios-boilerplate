@@ -1,7 +1,6 @@
 github "hackiftekhar/IQKeyboardManager"
 github "SVProgressHUD/SVProgressHUD"
 github "https://github.com/Antowkos/AsyncDisplayKit" "master"
-github "yannickl/DynamicColor"
 github "kishikawakatsumi/KeychainAccess"
 github "radex/SwiftyUserDefaults"
 github "MLSDev/TRON"

@@ -8,28 +8,26 @@
 
 import AsyncDisplayKit
 
-class BaseController<L: ASDisplayNode>: UIViewController {
+class BaseController<L>: UIViewController where L: ASDisplayNode {
     
     var layoutNode: L!
     var currentNode: ASDisplayNode! {
         willSet {
-            currentNode.frame = CGRect.zero
-            newValue.frame = self.view.bounds
+            if let currentNode = currentNode {
+                currentNode.frame = CGRect.zero
+                newValue.frame = self.view.bounds
+            }
         }
     }
     
-    init() {
-        layoutNode = L()
-        currentNode = layoutNode
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    func createView() -> L {
+        return L()
     }
     
     override func loadView() {
         super.loadView()
+        layoutNode = self.createView()
+        currentNode = layoutNode
         self.view.backgroundColor = .white
         self.view.addSubnode(currentNode)
     }

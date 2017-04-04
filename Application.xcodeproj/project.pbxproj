@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C319123B1E939ACE001D2C6D /* Application.xib in Resources */ = {isa = PBXBuildFile; fileRef = C319123A1E939ACE001D2C6D /* Application.xib */; };
 		C32874871E8CF25100B03BF4 /* AlbumAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32874681E8CF25100B03BF4 /* AlbumAdapter.swift */; };
 		C32874881E8CF25100B03BF4 /* PhotoAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32874691E8CF25100B03BF4 /* PhotoAdapter.swift */; };
 		C328748A1E8CF25100B03BF4 /* BaseAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C328746C1E8CF25100B03BF4 /* BaseAdapter.swift */; };
 		C328748B1E8CF25100B03BF4 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C328746D1E8CF25100B03BF4 /* BaseCell.swift */; };
 		C328748C1E8CF25100B03BF4 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C328746E1E8CF25100B03BF4 /* BaseController.swift */; };
 		C328748D1E8CF25100B03BF4 /* BaseLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C328746F1E8CF25100B03BF4 /* BaseLayout.swift */; };
-		C328748E1E8CF25100B03BF4 /* CollectionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32874701E8CF25100B03BF4 /* CollectionNode.swift */; };
 		C328748F1E8CF25100B03BF4 /* StateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32874711E8CF25100B03BF4 /* StateController.swift */; };
 		C32874911E8CF25100B03BF4 /* AddPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32874761E8CF25100B03BF4 /* AddPostController.swift */; };
 		C32874921E8CF25100B03BF4 /* AlbumController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32874771E8CF25100B03BF4 /* AlbumController.swift */; };
@@ -29,7 +29,6 @@
 		C328749D1E8CF25100B03BF4 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32874861E8CF25100B03BF4 /* Button.swift */; };
 		C32874AE1E8CF9C200B03BF4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C328749F1E8CF9C200B03BF4 /* Alamofire.framework */; };
 		C32874AF1E8CF9C200B03BF4 /* AsyncDisplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874A01E8CF9C200B03BF4 /* AsyncDisplayKit.framework */; };
-		C32874B01E8CF9C200B03BF4 /* DynamicColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874A11E8CF9C200B03BF4 /* DynamicColor.framework */; };
 		C32874B11E8CF9C200B03BF4 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874A21E8CF9C200B03BF4 /* IQKeyboardManagerSwift.framework */; };
 		C32874B21E8CF9C200B03BF4 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874A31E8CF9C200B03BF4 /* KeychainAccess.framework */; };
 		C32874B51E8CF9C200B03BF4 /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874A61E8CF9C200B03BF4 /* PINCache.framework */; };
@@ -59,13 +58,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C319123A1E939ACE001D2C6D /* Application.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Application.xib; sourceTree = "<group>"; };
 		C32874681E8CF25100B03BF4 /* AlbumAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumAdapter.swift; sourceTree = "<group>"; };
 		C32874691E8CF25100B03BF4 /* PhotoAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAdapter.swift; sourceTree = "<group>"; };
 		C328746C1E8CF25100B03BF4 /* BaseAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAdapter.swift; sourceTree = "<group>"; };
 		C328746D1E8CF25100B03BF4 /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
 		C328746E1E8CF25100B03BF4 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		C328746F1E8CF25100B03BF4 /* BaseLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLayout.swift; sourceTree = "<group>"; };
-		C32874701E8CF25100B03BF4 /* CollectionNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionNode.swift; sourceTree = "<group>"; };
 		C32874711E8CF25100B03BF4 /* StateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateController.swift; sourceTree = "<group>"; };
 		C32874761E8CF25100B03BF4 /* AddPostController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostController.swift; sourceTree = "<group>"; };
 		C32874771E8CF25100B03BF4 /* AlbumController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumController.swift; sourceTree = "<group>"; };
@@ -99,8 +98,8 @@
 		C35438851E8E637F00885B66 /* ApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationUITests.swift; sourceTree = "<group>"; };
 		C35438871E8E637F00885B66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3C4F2CA1E8CF0D400C755DA /* Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3C4F2CD1E8CF0D400C755DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Application/AppDelegate.swift; sourceTree = "<group>"; };
-		C3C4F2D41E8CF0D400C755DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Application/Assets.xcassets; sourceTree = "<group>"; };
+		C3C4F2CD1E8CF0D400C755DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C3C4F2D41E8CF0D400C755DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3C4F2D71E8CF0D400C755DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,7 +119,6 @@
 				C32874C31E8D20CA00B03BF4 /* SwiftyJSON.framework in Frameworks */,
 				C32874AE1E8CF9C200B03BF4 /* Alamofire.framework in Frameworks */,
 				C32874AF1E8CF9C200B03BF4 /* AsyncDisplayKit.framework in Frameworks */,
-				C32874B01E8CF9C200B03BF4 /* DynamicColor.framework in Frameworks */,
 				C32874B11E8CF9C200B03BF4 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				C32874B21E8CF9C200B03BF4 /* KeychainAccess.framework in Frameworks */,
 				C32874B51E8CF9C200B03BF4 /* PINCache.framework in Frameworks */,
@@ -151,7 +149,6 @@
 				C328746D1E8CF25100B03BF4 /* BaseCell.swift */,
 				C328746E1E8CF25100B03BF4 /* BaseController.swift */,
 				C328746F1E8CF25100B03BF4 /* BaseLayout.swift */,
-				C32874701E8CF25100B03BF4 /* CollectionNode.swift */,
 				C32874711E8CF25100B03BF4 /* StateController.swift */,
 			);
 			path = Base;
@@ -228,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				C329BE9D1E938D42002504E0 /* Application.clr */,
+				C319123A1E939ACE001D2C6D /* Application.xib */,
 				C329BE971E938B76002504E0 /* Info.plist */,
 				C329BE981E938B76002504E0 /* R.generated.swift */,
 			);
@@ -247,9 +245,6 @@
 			isa = PBXGroup;
 			children = (
 				C3C4F2CC1E8CF0D400C755DA /* Application */,
-				C3C4F2CD1E8CF0D400C755DA /* AppDelegate.swift */,
-				C3C4F2D41E8CF0D400C755DA /* Assets.xcassets */,
-				C3C4F2D61E8CF0D400C755DA /* LaunchScreen.storyboard */,
 				C35438841E8E637F00885B66 /* ApplicationUITests */,
 				C3C4F2CB1E8CF0D400C755DA /* Products */,
 				C328749E1E8CF9C200B03BF4 /* Frameworks */,
@@ -276,6 +271,9 @@
 				C329BE961E938B76002504E0 /* Supporting Files */,
 				C32874801E8CF25100B03BF4 /* Utilities */,
 				C32874851E8CF25100B03BF4 /* Widgets */,
+				C3C4F2CD1E8CF0D400C755DA /* AppDelegate.swift */,
+				C3C4F2D41E8CF0D400C755DA /* Assets.xcassets */,
+				C3C4F2D61E8CF0D400C755DA /* LaunchScreen.storyboard */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -371,6 +369,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C319123B1E939ACE001D2C6D /* Application.xib in Resources */,
 				C329BE9E1E938D42002504E0 /* Application.clr in Resources */,
 				C3C4F2D81E8CF0D400C755DA /* LaunchScreen.storyboard in Resources */,
 				C3C4F2D51E8CF0D400C755DA /* Assets.xcassets in Resources */,
@@ -395,7 +394,6 @@
 				"$(SRCROOT)/Carthage/Build/iOS/PINOperation.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyUserDefaults.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/DynamicColor.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/TRON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
@@ -449,7 +447,6 @@
 				C329BE9A1E938B76002504E0 /* R.generated.swift in Sources */,
 				C32874951E8CF25100B03BF4 /* AddPostLayout.swift in Sources */,
 				C328748B1E8CF25100B03BF4 /* BaseCell.swift in Sources */,
-				C328748E1E8CF25100B03BF4 /* CollectionNode.swift in Sources */,
 				C32874911E8CF25100B03BF4 /* AddPostController.swift in Sources */,
 				C328749C1E8CF25100B03BF4 /* Watchdog.swift in Sources */,
 				C32874981E8CF25100B03BF4 /* Photo.swift in Sources */,
@@ -479,7 +476,6 @@
 				C3C4F2D71E8CF0D400C755DA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
