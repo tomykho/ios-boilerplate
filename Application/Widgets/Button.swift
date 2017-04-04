@@ -24,7 +24,7 @@ class Button: ASButtonNode {
     override init() {
         super.init()
         textColor = .white
-        backgroundColor = .black
+        backgroundColor = R.color.application.red()
         contentEdgeInsets = UIEdgeInsetsMake(8, 8, 8, 8)
     }
     

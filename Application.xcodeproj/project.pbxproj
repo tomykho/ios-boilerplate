@@ -38,9 +38,10 @@
 		C32874BA1E8CF9C200B03BF4 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874AB1E8CF9C200B03BF4 /* RxSwift.framework */; };
 		C32874BB1E8CF9C200B03BF4 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874AC1E8CF9C200B03BF4 /* SVProgressHUD.framework */; };
 		C32874BC1E8CF9C200B03BF4 /* SwiftyUserDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874AD1E8CF9C200B03BF4 /* SwiftyUserDefaults.framework */; };
-		C32874C11E8D104700B03BF4 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = C32874C01E8D104700B03BF4 /* Cartfile */; };
 		C32874C31E8D20CA00B03BF4 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874C21E8D20CA00B03BF4 /* SwiftyJSON.framework */; };
-		C329BE901E93844B002504E0 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329BE8F1E93844B002504E0 /* R.generated.swift */; };
+		C329BE9A1E938B76002504E0 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329BE981E938B76002504E0 /* R.generated.swift */; };
+		C329BE9C1E938CE8002504E0 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C329BE9B1E938CE8002504E0 /* Rswift.framework */; };
+		C329BE9E1E938D42002504E0 /* Application.clr in Resources */ = {isa = PBXBuildFile; fileRef = C329BE9D1E938D42002504E0 /* Application.clr */; };
 		C35438861E8E637F00885B66 /* ApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35438851E8E637F00885B66 /* ApplicationUITests.swift */; };
 		C3C4F2CE1E8CF0D400C755DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C4F2CD1E8CF0D400C755DA /* AppDelegate.swift */; };
 		C3C4F2D51E8CF0D400C755DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3C4F2D41E8CF0D400C755DA /* Assets.xcassets */; };
@@ -89,17 +90,18 @@
 		C32874AB1E8CF9C200B03BF4 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		C32874AC1E8CF9C200B03BF4 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 		C32874AD1E8CF9C200B03BF4 /* SwiftyUserDefaults.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyUserDefaults.framework; path = Carthage/Build/iOS/SwiftyUserDefaults.framework; sourceTree = "<group>"; };
-		C32874C01E8D104700B03BF4 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		C32874C21E8D20CA00B03BF4 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
-		C329BE8F1E93844B002504E0 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		C329BE971E938B76002504E0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C329BE981E938B76002504E0 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		C329BE9B1E938CE8002504E0 /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
+		C329BE9D1E938D42002504E0 /* Application.clr */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Application.clr; sourceTree = "<group>"; };
 		C35438831E8E637F00885B66 /* ApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35438851E8E637F00885B66 /* ApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationUITests.swift; sourceTree = "<group>"; };
 		C35438871E8E637F00885B66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3C4F2CA1E8CF0D400C755DA /* Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3C4F2CD1E8CF0D400C755DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C3C4F2D41E8CF0D400C755DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3C4F2CD1E8CF0D400C755DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Application/AppDelegate.swift; sourceTree = "<group>"; };
+		C3C4F2D41E8CF0D400C755DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Application/Assets.xcassets; sourceTree = "<group>"; };
 		C3C4F2D71E8CF0D400C755DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C3C4F2D91E8CF0D400C755DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C329BE9C1E938CE8002504E0 /* Rswift.framework in Frameworks */,
 				C32874C31E8D20CA00B03BF4 /* SwiftyJSON.framework in Frameworks */,
 				C32874AE1E8CF9C200B03BF4 /* Alamofire.framework in Frameworks */,
 				C32874AF1E8CF9C200B03BF4 /* AsyncDisplayKit.framework in Frameworks */,
@@ -204,6 +207,7 @@
 		C328749E1E8CF9C200B03BF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C329BE9B1E938CE8002504E0 /* Rswift.framework */,
 				C32874C21E8D20CA00B03BF4 /* SwiftyJSON.framework */,
 				C328749F1E8CF9C200B03BF4 /* Alamofire.framework */,
 				C32874A01E8CF9C200B03BF4 /* AsyncDisplayKit.framework */,
@@ -220,6 +224,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C329BE961E938B76002504E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C329BE9D1E938D42002504E0 /* Application.clr */,
+				C329BE971E938B76002504E0 /* Info.plist */,
+				C329BE981E938B76002504E0 /* R.generated.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		C35438841E8E637F00885B66 /* ApplicationUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,8 +246,10 @@
 		C3C4F2C11E8CF0D400C755DA = {
 			isa = PBXGroup;
 			children = (
-				C32874C01E8D104700B03BF4 /* Cartfile */,
 				C3C4F2CC1E8CF0D400C755DA /* Application */,
+				C3C4F2CD1E8CF0D400C755DA /* AppDelegate.swift */,
+				C3C4F2D41E8CF0D400C755DA /* Assets.xcassets */,
+				C3C4F2D61E8CF0D400C755DA /* LaunchScreen.storyboard */,
 				C35438841E8E637F00885B66 /* ApplicationUITests */,
 				C3C4F2CB1E8CF0D400C755DA /* Products */,
 				C328749E1E8CF9C200B03BF4 /* Frameworks */,
@@ -257,13 +273,9 @@
 				C32874751E8CF25100B03BF4 /* Controllers */,
 				C328747A1E8CF25100B03BF4 /* Layouts */,
 				C328747D1E8CF25100B03BF4 /* Models */,
+				C329BE961E938B76002504E0 /* Supporting Files */,
 				C32874801E8CF25100B03BF4 /* Utilities */,
 				C32874851E8CF25100B03BF4 /* Widgets */,
-				C3C4F2CD1E8CF0D400C755DA /* AppDelegate.swift */,
-				C3C4F2D41E8CF0D400C755DA /* Assets.xcassets */,
-				C3C4F2D61E8CF0D400C755DA /* LaunchScreen.storyboard */,
-				C3C4F2D91E8CF0D400C755DA /* Info.plist */,
-				C329BE8F1E93844B002504E0 /* R.generated.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -359,7 +371,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C32874C11E8D104700B03BF4 /* Cartfile in Resources */,
+				C329BE9E1E938D42002504E0 /* Application.clr in Resources */,
 				C3C4F2D81E8CF0D400C755DA /* LaunchScreen.storyboard in Resources */,
 				C3C4F2D51E8CF0D400C755DA /* Assets.xcassets in Resources */,
 			);
@@ -387,6 +399,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/TRON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Rswift.framework",
 			);
 			name = "Copy Frameworks";
 			outputPaths = (
@@ -407,7 +420,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$SRCROOT/rswift\" \"$SRCROOT\"";
+			shellScript = "\"$SRCROOT/rswift\" \"$SRCROOT/Application/Supporting Files\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -433,7 +446,7 @@
 				C328748C1E8CF25100B03BF4 /* BaseController.swift in Sources */,
 				C328748D1E8CF25100B03BF4 /* BaseLayout.swift in Sources */,
 				C3C4F2CE1E8CF0D400C755DA /* AppDelegate.swift in Sources */,
-				C329BE901E93844B002504E0 /* R.generated.swift in Sources */,
+				C329BE9A1E938B76002504E0 /* R.generated.swift in Sources */,
 				C32874951E8CF25100B03BF4 /* AddPostLayout.swift in Sources */,
 				C328748B1E8CF25100B03BF4 /* BaseCell.swift in Sources */,
 				C328748E1E8CF25100B03BF4 /* CollectionNode.swift in Sources */,
@@ -466,6 +479,7 @@
 				C3C4F2D71E8CF0D400C755DA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -596,7 +610,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Application/Info.plist;
+				INFOPLIST_FILE = "Application/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.Application;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -612,7 +626,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Application/Info.plist;
+				INFOPLIST_FILE = "Application/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.Application;
 				PRODUCT_NAME = "$(TARGET_NAME)";
