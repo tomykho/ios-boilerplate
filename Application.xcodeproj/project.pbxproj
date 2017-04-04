@@ -40,6 +40,7 @@
 		C32874BC1E8CF9C200B03BF4 /* SwiftyUserDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874AD1E8CF9C200B03BF4 /* SwiftyUserDefaults.framework */; };
 		C32874C11E8D104700B03BF4 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = C32874C01E8D104700B03BF4 /* Cartfile */; };
 		C32874C31E8D20CA00B03BF4 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874C21E8D20CA00B03BF4 /* SwiftyJSON.framework */; };
+		C329BE901E93844B002504E0 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329BE8F1E93844B002504E0 /* R.generated.swift */; };
 		C35438861E8E637F00885B66 /* ApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35438851E8E637F00885B66 /* ApplicationUITests.swift */; };
 		C3C4F2CE1E8CF0D400C755DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C4F2CD1E8CF0D400C755DA /* AppDelegate.swift */; };
 		C3C4F2D51E8CF0D400C755DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3C4F2D41E8CF0D400C755DA /* Assets.xcassets */; };
@@ -90,6 +91,7 @@
 		C32874AD1E8CF9C200B03BF4 /* SwiftyUserDefaults.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyUserDefaults.framework; path = Carthage/Build/iOS/SwiftyUserDefaults.framework; sourceTree = "<group>"; };
 		C32874C01E8D104700B03BF4 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		C32874C21E8D20CA00B03BF4 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		C329BE8F1E93844B002504E0 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		C35438831E8E637F00885B66 /* ApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35438851E8E637F00885B66 /* ApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationUITests.swift; sourceTree = "<group>"; };
 		C35438871E8E637F00885B66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -261,6 +263,7 @@
 				C3C4F2D41E8CF0D400C755DA /* Assets.xcassets */,
 				C3C4F2D61E8CF0D400C755DA /* LaunchScreen.storyboard */,
 				C3C4F2D91E8CF0D400C755DA /* Info.plist */,
+				C329BE8F1E93844B002504E0 /* R.generated.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -290,10 +293,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3C4F2DC1E8CF0D400C755DA /* Build configuration list for PBXNativeTarget "Application" */;
 			buildPhases = (
+				C329BE8E1E938387002504E0 /* Generate Resources */,
 				C3C4F2C61E8CF0D400C755DA /* Sources */,
 				C3C4F2C71E8CF0D400C755DA /* Frameworks */,
 				C3C4F2C81E8CF0D400C755DA /* Resources */,
-				C32874BD1E8CF9D400B03BF4 /* ShellScript */,
+				C32874BD1E8CF9D400B03BF4 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -364,7 +368,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C32874BD1E8CF9D400B03BF4 /* ShellScript */ = {
+		C32874BD1E8CF9D400B03BF4 /* Copy Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -384,11 +388,26 @@
 				"$(SRCROOT)/Carthage/Build/iOS/TRON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 			);
+			name = "Copy Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		C329BE8E1E938387002504E0 /* Generate Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/rswift\" \"$SRCROOT\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -414,6 +433,7 @@
 				C328748C1E8CF25100B03BF4 /* BaseController.swift in Sources */,
 				C328748D1E8CF25100B03BF4 /* BaseLayout.swift in Sources */,
 				C3C4F2CE1E8CF0D400C755DA /* AppDelegate.swift in Sources */,
+				C329BE901E93844B002504E0 /* R.generated.swift in Sources */,
 				C32874951E8CF25100B03BF4 /* AddPostLayout.swift in Sources */,
 				C328748B1E8CF25100B03BF4 /* BaseCell.swift in Sources */,
 				C328748E1E8CF25100B03BF4 /* CollectionNode.swift in Sources */,
