@@ -18,6 +18,7 @@ final public class Watchdog: NSObject {
     /// - parameter threshold: number of seconds that must pass to consider the main thread blocked.
     /// - parameter strictMode: boolean value that stops the execution whenever the threshold is reached.
     public convenience init(threshold: Double = Watchdog.defaultThreshold, strictMode: Bool = false) {
+        print("Running Watchdog with treshold: \(String(format:"%.2f", threshold)) and strictMode: \(strictMode)")
         let message = "👮 Main thread was blocked for " + String(format:"%.2f", threshold) + "s 👮"
         
         self.init(threshold: threshold) {

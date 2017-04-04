@@ -33,7 +33,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SVProgressHUD.setDefaultMaskType(.black)
         
         // Always put Watchdog at last
-//        watchdog = Watchdog(threshold: 0.8, strictMode: true)
+        if !ProcessInfo.processInfo.arguments.contains("TEST") {
+            watchdog = Watchdog(threshold: 0.4, strictMode: true)
+        }
         return true
     }
 
