@@ -28,7 +28,11 @@ class BaseController<L>: UIViewController where L: ASDisplayNode {
         super.loadView()
         layoutNode = self.createView()
         currentNode = layoutNode
-        self.view.backgroundColor = .white
+        if let delegate = UIApplication.shared.delegate {
+            self.view.backgroundColor = delegate.window??.backgroundColor
+        } else {
+            self.view.backgroundColor = .white
+        }
         self.view.addSubnode(currentNode)
     }
     
