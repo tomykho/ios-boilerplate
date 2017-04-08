@@ -15,7 +15,7 @@ extension ASLayoutElementStyle {
             return flexGrow
         }
         set {
-            flexGrow = flex
+            flexGrow = newValue
             flexShrink = 1
             flexBasis = ASDimensionMake(0)
         }
