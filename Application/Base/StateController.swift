@@ -10,6 +10,7 @@ import AsyncDisplayKit
 import RxSwift
 import TRON
 
+
 enum State {
     case loading
     case loaded
@@ -17,41 +18,20 @@ enum State {
     case error
 }
 
-class StateController<L: ASDisplayNode>: BaseController<L> {
+class StateController<L: StateLayout>: BaseController<L> {
     
-    lazy var loadingNode: ASDisplayNode = {
-        return ASDisplayNode(viewBlock: { () -> UIView in
-            let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
-            activityIndicator.color = .gray
-            activityIndicator.startAnimating()
-            return activityIndicator;
-        })
-    }()
-    var state: State = .loading {
-        didSet {
-            switch state {
-            case .loading:
-                break
-            case .loaded:
-                self.currentNode = layoutNode
-                break
-            case .empty:
-                break
-            case .error:
-                break
-            }
+    var state: State {
+        get {
+            return self.layoutNode.state
         }
-    }
-    
-    override func loadView() {
-        super.loadView()
-        self.view.addSubnode(loadingNode)
-        self.currentNode = loadingNode
+        set {
+            self.layoutNode.state = newValue
+        }
     }
 
 }
 
-class StateListController<L: ASDisplayNode, T: JSONDecodable>: StateController<L> {
+class StateListController<L: StateLayout, T: JSONDecodable>: StateController<L> {
     
     var subscription: Disposable?
     var request: Observable<[T]>? {
@@ -59,10 +39,21 @@ class StateListController<L: ASDisplayNode, T: JSONDecodable>: StateController<L
             return nil
         }
     }
+    private var adapter: BaseAdapter<T>?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let request = request, let adapter = self.loadAdapter() {
+        self.adapter = self.loadAdapter()
+        if let adapter = self.adapter {
+            adapter.didSelectItem = { index, item in
+                self.didSelectItemAt(index, item: item)
+            }
+        }
+        refresh()
+    }
+    
+    func refresh() {
+        if let request = request, let adapter = adapter {
             self.subscription = request.subscribe { event in
                 switch event {
                 case let .next(items):
@@ -75,9 +66,6 @@ class StateListController<L: ASDisplayNode, T: JSONDecodable>: StateController<L
                 case .completed:
                     break
                 }
-            }
-            adapter.didSelectItem = { index, item in
-                self.didSelectItemAt(index, item: item)
             }
         }
     }
@@ -93,6 +81,16 @@ class StateListController<L: ASDisplayNode, T: JSONDecodable>: StateController<L
     override func didBack() {
         super.didBack()
         subscription?.dispose()
+    }
+    
+}
+
+class StateLayout: BaseLayout {
+    
+    var state: State = .loading
+    
+    override init() {
+        super.init()
     }
     
 }
