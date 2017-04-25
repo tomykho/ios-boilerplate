@@ -29,7 +29,6 @@
 		C32874971E8CF25100B03BF4 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = C328747E1E8CF25100B03BF4 /* Album.swift */; };
 		C32874981E8CF25100B03BF4 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C328747F1E8CF25100B03BF4 /* Photo.swift */; };
 		C32874991E8CF25100B03BF4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32874811E8CF25100B03BF4 /* API.swift */; };
-		C328749A1E8CF25100B03BF4 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32874821E8CF25100B03BF4 /* Defaults.swift */; };
 		C328749C1E8CF25100B03BF4 /* Watchdog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32874841E8CF25100B03BF4 /* Watchdog.swift */; };
 		C328749D1E8CF25100B03BF4 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32874861E8CF25100B03BF4 /* Button.swift */; };
 		C32874AE1E8CF9C200B03BF4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C328749F1E8CF9C200B03BF4 /* Alamofire.framework */; };
@@ -46,6 +45,7 @@
 		C329BE9C1E938CE8002504E0 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C329BE9B1E938CE8002504E0 /* Rswift.framework */; };
 		C34325941E999139008BB3F7 /* ASElementStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34325931E999139008BB3F7 /* ASElementStyle.swift */; };
 		C35438861E8E637F00885B66 /* ApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35438851E8E637F00885B66 /* ApplicationUITests.swift */; };
+		C37BBA601EAFBDBC0078A40F /* SwiftyUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37BBA5F1EAFBDBC0078A40F /* SwiftyUserDefaults.swift */; };
 		C3C4F2CE1E8CF0D400C755DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C4F2CD1E8CF0D400C755DA /* AppDelegate.swift */; };
 		C3C4F2D51E8CF0D400C755DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3C4F2D41E8CF0D400C755DA /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -83,7 +83,6 @@
 		C328747E1E8CF25100B03BF4 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		C328747F1E8CF25100B03BF4 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		C32874811E8CF25100B03BF4 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		C32874821E8CF25100B03BF4 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		C32874841E8CF25100B03BF4 /* Watchdog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Watchdog.swift; sourceTree = "<group>"; };
 		C32874861E8CF25100B03BF4 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		C328749F1E8CF9C200B03BF4 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
@@ -103,6 +102,7 @@
 		C35438831E8E637F00885B66 /* ApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35438851E8E637F00885B66 /* ApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationUITests.swift; sourceTree = "<group>"; };
 		C35438871E8E637F00885B66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C37BBA5F1EAFBDBC0078A40F /* SwiftyUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyUserDefaults.swift; sourceTree = "<group>"; };
 		C3C4F2CA1E8CF0D400C755DA /* Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3C4F2CD1E8CF0D400C755DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3C4F2D41E8CF0D400C755DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -207,7 +207,6 @@
 			isa = PBXGroup;
 			children = (
 				C32874811E8CF25100B03BF4 /* API.swift */,
-				C32874821E8CF25100B03BF4 /* Defaults.swift */,
 				C32874841E8CF25100B03BF4 /* Watchdog.swift */,
 			);
 			path = Utilities;
@@ -246,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				C34325931E999139008BB3F7 /* ASElementStyle.swift */,
+				C37BBA5F1EAFBDBC0078A40F /* SwiftyUserDefaults.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -459,6 +459,7 @@
 				C32874971E8CF25100B03BF4 /* Album.swift in Sources */,
 				C328748C1E8CF25100B03BF4 /* BaseController.swift in Sources */,
 				C31AA7AF1E9B75C8000B03BD /* CollectionStateLayout.swift in Sources */,
+				C37BBA601EAFBDBC0078A40F /* SwiftyUserDefaults.swift in Sources */,
 				C328748D1E8CF25100B03BF4 /* BaseLayout.swift in Sources */,
 				C31AA7A51E9B611B000B03BD /* R+color.swift in Sources */,
 				C3C4F2CE1E8CF0D400C755DA /* AppDelegate.swift in Sources */,
@@ -474,7 +475,6 @@
 				C32874871E8CF25100B03BF4 /* AlbumAdapter.swift in Sources */,
 				C32874931E8CF25100B03BF4 /* MainController.swift in Sources */,
 				C34325941E999139008BB3F7 /* ASElementStyle.swift in Sources */,
-				C328749A1E8CF25100B03BF4 /* Defaults.swift in Sources */,
 				C32874961E8CF25100B03BF4 /* MainLayout.swift in Sources */,
 				C328748F1E8CF25100B03BF4 /* StateController.swift in Sources */,
 			);

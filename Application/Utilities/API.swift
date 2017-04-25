@@ -16,7 +16,7 @@ import SwiftyUserDefaults
 
 struct API {
     
-    private static var tron: TRON = {
+    static var tron: TRON = {
         let tron = TRON(
             baseURL: "https://jsonplaceholder.typicode.com",
             plugins: [
@@ -58,30 +58,6 @@ struct API {
         required init(json: JSON) {
         }
         
-    }
-    
-    struct Albums {
-        static let path = "albums"
-        
-        static func find() -> Observable<[Album]> {
-            let request: APIRequest<[Album], API.Error> = tron.request(path)
-            return request.rxResult()
-        }
-        
-        static func photos(_ albumId: Int) -> Observable<[Photo]> {
-            let request: APIRequest<[Photo], API.Error> = tron.request("\(path)/\(albumId)/\(Photos.path)")
-            return request.rxResult()
-        }
-        
-    }
-    
-    struct Photos {
-        static let path = "photos"
-        
-        static func find() -> Observable<[Photo]> {
-            let request: APIRequest<[Photo], API.Error> = tron.request(path)
-            return request.rxResult()
-        }
     }
     
 }
