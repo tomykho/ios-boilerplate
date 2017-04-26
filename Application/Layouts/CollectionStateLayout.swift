@@ -30,11 +30,15 @@ class CollectionStateLayout: StateLayout {
         }
     }
     
-    override init() {
+    override convenience init() {
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.minimumInteritemSpacing = 0
         flowLayout.minimumLineSpacing = 0
-        collectionNode = ASCollectionNode(collectionViewLayout: flowLayout)
+        self.init(collectionViewLayout: flowLayout)
+    }
+    
+    init(collectionViewLayout: UICollectionViewLayout) {
+        collectionNode = ASCollectionNode(collectionViewLayout: collectionViewLayout)
         super.init()
         state = .loading
     }
