@@ -22,13 +22,12 @@ class PhotoAdapter: BaseCollectionAdapter<Photo> {
             super.init(item: item)
             imageNode.shouldRenderProgressImages = true
             imageNode.url = URL(string: item.url)
-            
-            let numberOfColumns: CGFloat = 4
-            let size = (UIScreen.main.nativeBounds.width / UIScreen.main.scale) / numberOfColumns
-            imageNode.style.preferredSize = CGSize(width: size, height: size)
         }
         
         override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
+            let numberOfColumns: CGFloat = 4
+            let size = constrainedSize.max.width / numberOfColumns
+            imageNode.style.preferredSize = CGSize(width: size, height: size)
             return ASWrapperLayoutSpec(layoutElement: imageNode)
         }
         

@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C30EE2861EC197CD00D3FBA0 /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30EE2851EC197CD00D3FBA0 /* R.swift */; };
 		C319123E1E93B87A001D2C6D /* DynamicColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874A11E8CF9C200B03BF4 /* DynamicColor.framework */; };
-		C31AA7A51E9B611B000B03BD /* R+color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31AA7A21E9B611B000B03BD /* R+color.swift */; };
-		C31AA7A61E9B611B000B03BD /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31AA7A31E9B611B000B03BD /* R.generated.swift */; };
 		C31AA7AB1E9B68D7000B03BD /* TableStateLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31AA7AA1E9B68D7000B03BD /* TableStateLayout.swift */; };
 		C31AA7AD1E9B6B96000B03BD /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31AA7AC1E9B6B96000B03BD /* ActivityIndicator.swift */; };
 		C31AA7AF1E9B75C8000B03BD /* CollectionStateLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31AA7AE1E9B75C8000B03BD /* CollectionStateLayout.swift */; };
@@ -36,13 +35,11 @@
 		C32874B11E8CF9C200B03BF4 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874A21E8CF9C200B03BF4 /* IQKeyboardManagerSwift.framework */; };
 		C32874B21E8CF9C200B03BF4 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874A31E8CF9C200B03BF4 /* KeychainAccess.framework */; };
 		C32874B51E8CF9C200B03BF4 /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874A61E8CF9C200B03BF4 /* PINCache.framework */; };
-		C32874B61E8CF9C200B03BF4 /* PINOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874A71E8CF9C200B03BF4 /* PINOperation.framework */; };
 		C32874B71E8CF9C200B03BF4 /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874A81E8CF9C200B03BF4 /* PINRemoteImage.framework */; };
 		C32874BA1E8CF9C200B03BF4 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874AB1E8CF9C200B03BF4 /* RxSwift.framework */; };
 		C32874BB1E8CF9C200B03BF4 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874AC1E8CF9C200B03BF4 /* SVProgressHUD.framework */; };
 		C32874BC1E8CF9C200B03BF4 /* SwiftyUserDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874AD1E8CF9C200B03BF4 /* SwiftyUserDefaults.framework */; };
 		C32874C31E8D20CA00B03BF4 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32874C21E8D20CA00B03BF4 /* SwiftyJSON.framework */; };
-		C329BE9C1E938CE8002504E0 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C329BE9B1E938CE8002504E0 /* Rswift.framework */; };
 		C34325941E999139008BB3F7 /* ASElementStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34325931E999139008BB3F7 /* ASElementStyle.swift */; };
 		C35438861E8E637F00885B66 /* ApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35438851E8E637F00885B66 /* ApplicationUITests.swift */; };
 		C37BBA601EAFBDBC0078A40F /* SwiftyUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37BBA5F1EAFBDBC0078A40F /* SwiftyUserDefaults.swift */; };
@@ -61,8 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C31AA7A21E9B611B000B03BD /* R+color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "R+color.swift"; sourceTree = "<group>"; };
-		C31AA7A31E9B611B000B03BD /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		C30EE2851EC197CD00D3FBA0 /* R.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
 		C31AA7A41E9B611B000B03BD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C31AA7AA1E9B68D7000B03BD /* TableStateLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableStateLayout.swift; sourceTree = "<group>"; };
 		C31AA7AC1E9B6B96000B03BD /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
@@ -91,13 +87,11 @@
 		C32874A21E8CF9C200B03BF4 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManagerSwift.framework; path = Carthage/Build/iOS/IQKeyboardManagerSwift.framework; sourceTree = "<group>"; };
 		C32874A31E8CF9C200B03BF4 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
 		C32874A61E8CF9C200B03BF4 /* PINCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINCache.framework; path = Carthage/Build/iOS/PINCache.framework; sourceTree = "<group>"; };
-		C32874A71E8CF9C200B03BF4 /* PINOperation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINOperation.framework; path = Carthage/Build/iOS/PINOperation.framework; sourceTree = "<group>"; };
 		C32874A81E8CF9C200B03BF4 /* PINRemoteImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINRemoteImage.framework; path = Carthage/Build/iOS/PINRemoteImage.framework; sourceTree = "<group>"; };
 		C32874AB1E8CF9C200B03BF4 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		C32874AC1E8CF9C200B03BF4 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 		C32874AD1E8CF9C200B03BF4 /* SwiftyUserDefaults.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyUserDefaults.framework; path = Carthage/Build/iOS/SwiftyUserDefaults.framework; sourceTree = "<group>"; };
 		C32874C21E8D20CA00B03BF4 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
-		C329BE9B1E938CE8002504E0 /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
 		C34325931E999139008BB3F7 /* ASElementStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASElementStyle.swift; sourceTree = "<group>"; };
 		C35438831E8E637F00885B66 /* ApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35438851E8E637F00885B66 /* ApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationUITests.swift; sourceTree = "<group>"; };
@@ -122,14 +116,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C319123E1E93B87A001D2C6D /* DynamicColor.framework in Frameworks */,
-				C329BE9C1E938CE8002504E0 /* Rswift.framework in Frameworks */,
 				C32874C31E8D20CA00B03BF4 /* SwiftyJSON.framework in Frameworks */,
 				C32874AE1E8CF9C200B03BF4 /* Alamofire.framework in Frameworks */,
 				C32874AF1E8CF9C200B03BF4 /* AsyncDisplayKit.framework in Frameworks */,
 				C32874B11E8CF9C200B03BF4 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				C32874B21E8CF9C200B03BF4 /* KeychainAccess.framework in Frameworks */,
 				C32874B51E8CF9C200B03BF4 /* PINCache.framework in Frameworks */,
-				C32874B61E8CF9C200B03BF4 /* PINOperation.framework in Frameworks */,
 				C32874B71E8CF9C200B03BF4 /* PINRemoteImage.framework in Frameworks */,
 				C32874BA1E8CF9C200B03BF4 /* RxSwift.framework in Frameworks */,
 				C32874BB1E8CF9C200B03BF4 /* SVProgressHUD.framework in Frameworks */,
@@ -143,8 +135,6 @@
 		C31AA7A11E9B60E0000B03BD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C31AA7A21E9B611B000B03BD /* R+color.swift */,
-				C31AA7A31E9B611B000B03BD /* R.generated.swift */,
 				C31AA7A41E9B611B000B03BD /* Info.plist */,
 				C3C4F2D61E8CF0D400C755DA /* LaunchScreen.storyboard */,
 			);
@@ -208,6 +198,7 @@
 			children = (
 				C32874811E8CF25100B03BF4 /* API.swift */,
 				C32874841E8CF25100B03BF4 /* Watchdog.swift */,
+				C30EE2851EC197CD00D3FBA0 /* R.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -224,7 +215,6 @@
 		C328749E1E8CF9C200B03BF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C329BE9B1E938CE8002504E0 /* Rswift.framework */,
 				C32874C21E8D20CA00B03BF4 /* SwiftyJSON.framework */,
 				C328749F1E8CF9C200B03BF4 /* Alamofire.framework */,
 				C32874A01E8CF9C200B03BF4 /* AsyncDisplayKit.framework */,
@@ -232,7 +222,6 @@
 				C32874A21E8CF9C200B03BF4 /* IQKeyboardManagerSwift.framework */,
 				C32874A31E8CF9C200B03BF4 /* KeychainAccess.framework */,
 				C32874A61E8CF9C200B03BF4 /* PINCache.framework */,
-				C32874A71E8CF9C200B03BF4 /* PINOperation.framework */,
 				C32874A81E8CF9C200B03BF4 /* PINRemoteImage.framework */,
 				C32874AB1E8CF9C200B03BF4 /* RxSwift.framework */,
 				C32874AC1E8CF9C200B03BF4 /* SVProgressHUD.framework */,
@@ -321,7 +310,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3C4F2DC1E8CF0D400C755DA /* Build configuration list for PBXNativeTarget "Application" */;
 			buildPhases = (
-				C329BE8E1E938387002504E0 /* Generate Resources */,
 				C3C4F2C61E8CF0D400C755DA /* Sources */,
 				C3C4F2C71E8CF0D400C755DA /* Frameworks */,
 				C3C4F2C81E8CF0D400C755DA /* Resources */,
@@ -406,13 +394,11 @@
 				"$(SRCROOT)/Carthage/Build/iOS/AsyncDisplayKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/PINRemoteImage.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/PINCache.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/PINOperation.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyUserDefaults.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/TRON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Rswift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/DynamicColor.framework",
 			);
 			name = "Copy Frameworks";
@@ -421,20 +407,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		C329BE8E1E938387002504E0 /* Generate Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Generate Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"$SRCROOT/rswift\" \"$SRCROOT/Application\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -459,13 +431,12 @@
 				C32874971E8CF25100B03BF4 /* Album.swift in Sources */,
 				C328748C1E8CF25100B03BF4 /* BaseController.swift in Sources */,
 				C31AA7AF1E9B75C8000B03BD /* CollectionStateLayout.swift in Sources */,
+				C30EE2861EC197CD00D3FBA0 /* R.swift in Sources */,
 				C37BBA601EAFBDBC0078A40F /* SwiftyUserDefaults.swift in Sources */,
 				C328748D1E8CF25100B03BF4 /* BaseLayout.swift in Sources */,
-				C31AA7A51E9B611B000B03BD /* R+color.swift in Sources */,
 				C3C4F2CE1E8CF0D400C755DA /* AppDelegate.swift in Sources */,
 				C32874951E8CF25100B03BF4 /* AddPostLayout.swift in Sources */,
 				C328748B1E8CF25100B03BF4 /* BaseCell.swift in Sources */,
-				C31AA7A61E9B611B000B03BD /* R.generated.swift in Sources */,
 				C32874911E8CF25100B03BF4 /* AddPostController.swift in Sources */,
 				C328749C1E8CF25100B03BF4 /* Watchdog.swift in Sources */,
 				C32874981E8CF25100B03BF4 /* Photo.swift in Sources */,
@@ -631,6 +602,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.Application;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -647,6 +619,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.Application;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
